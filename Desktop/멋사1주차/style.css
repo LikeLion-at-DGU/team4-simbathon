@@ -1,0 +1,17 @@
+.container {
+  margin: 4% 10% 10% 10%;
+}
+
+.content {
+  font-weight: 400px;
+  font-size: large;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.club {
+  text-decoration: none;
+}
