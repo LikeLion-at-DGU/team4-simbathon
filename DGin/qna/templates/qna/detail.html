@@ -9,7 +9,7 @@
     <div class="question">
         <h1>{{question.title}}</h1>
         {% if question.writer %}
-            <h3>작성자 : {{ question.writer }}</h3>
+            <h3>작성자 : [{{ question.major.department }}] [{{ question.writer }}]  </h3>
             {% if question.major %}
                 <h5>전공 : {{ question.major }}</h5>
                 <h5>교수 : {{ question.major.professor }}</h5>
@@ -68,7 +68,7 @@
         <div>
             {% for answer in answers %}
             <div>
-                <h4>작성자 : {{answer.writer}}</h4>
+                <h4>작성자 : [{{ question.major.department }}] [{{ answer.writer.year_in_school }}] [{{answer.writer}}]</h4>
                 {% if answer.selection is True %}
                 <h4>채택완료</h4>
                 {% endif %}
