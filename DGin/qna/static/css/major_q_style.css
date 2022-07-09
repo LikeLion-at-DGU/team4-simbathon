@@ -116,18 +116,18 @@ a {
   border-left: none;
   border-right: none;
   border-bottom: 3px solid black;
-  background-color: #c1bfbf;
+  background-color: #ffc107;
 }
 
 .search-wrapper2 .search-icon{
-  background-color: #c1bfbf;
+  background-color: #ffc107;
   border: none;
   padding-right: none;
 }
 .search-wrapper2 .search-icon img{
   height: 36px;
   width: 36px;
-  background-color: #c1bfbf;
+  background-color: #ffc107;
   border: none;
   padding-right: none;
 }
@@ -140,15 +140,16 @@ a {
 }
 .selection button{
   border: none;
-  background-color: #c1bfbf;
+  background-color: #ffc107;
   margin: auto 6px;
 }
 .selection label{
   cursor: pointer;
   padding: 8px 4px;
   border-radius: 12px;
-  border: 2px solid black;
-  background:#c1bfbf;
+  /* border: 2px solid black; */
+  background:#ff9a00;
+  color : white;
   min-width: 30%;
 }
 
@@ -323,7 +324,8 @@ a {
     text-align: right;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #c1bfbf;
+    background-color: #ffc107; 
+    /* @ */
   }
   .question_menu .search{
     text-align: left;
