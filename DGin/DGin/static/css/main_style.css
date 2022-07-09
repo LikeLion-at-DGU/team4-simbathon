@@ -241,7 +241,7 @@ nav {
 .on_img {
     position: relative;
     text-align: center;
-    color: white;
+    /* color: white; */
 }
   /* Centered text */
 .centered {
@@ -723,6 +723,21 @@ input[type="radio"] {
 }
 
 
+.main_image_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -200% );
+    color: white;
+  }
+
+  .main_image_text2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -370% );
+    color: white;
+  }
 
 .footer {
     padding: 2.5rem 0;
