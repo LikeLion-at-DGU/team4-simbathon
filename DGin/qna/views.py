@@ -208,10 +208,13 @@ def update(request, id):
     update_question.pub_date = timezone.now()
     update_question.body = request.POST['body']
     update_question.image = request.FILES.get('image')
-    if request.POST['major'] == 'nothing':
+    try :
+        if request.POST['major'] == 'nothing':
+            pass
+        else:
+            update_question.major = get_object_or_404(Major, id = request.POST['major'])
+    except: 
         update_question.major = None
-    else:
-        update_question.major = get_object_or_404(Major, id = request.POST['major'])
     update_question.save()
     return redirect('qna:detail', update_question.id)
 
